@@ -6,3 +6,13 @@ A simple app made using Streamlit that predicts student scores based on the stud
 pip install -r requirements.txt
 streamlit run study_score_app.py
 
+#  Live Demo
+[Click here to try it out]
+https://study-score-predictor-jaw57v6ymnuxqy7n4sicjw.streamlit.app/
+
+# Tech Stack
+- Python
+- Streamlit
+- scikit-learn
+- pandas
+
