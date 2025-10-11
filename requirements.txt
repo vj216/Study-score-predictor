@@ -1,6 +1,9 @@
-# streamlit
-# pandas
-# scikit-learn
+streamlit
+pandas
+scikit-learn
+googletrans==4.0.0-rc1
+transformers
+sentencepiece
 
 # To install the "Hugging face" API for AI translations:
 # `pip install transformers sentencepiece`
