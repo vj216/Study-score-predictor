@@ -1,3 +1,28 @@
 streamlit
 pandas
 scikit-learn
+
+To install the "Hugging face" API for AI translations:
+`pip install transformers sentencepiece`
+
+Creating a virtual environment:
+python -m venv .aienv
+
+Activate the Environment (Git Bash):
+source .aienv/Scripts/activate
+
+Install required packages
+pip install streamlit transformers sentencepiece pandas scikit-learn
+
+Run Your Streamlit App
+streamlit run study_score_app.py
+
+We are now switching to openai API for AI translation, because Hugging Face was having some problems with pytorch dependencies.
+
+Now, again we are using Google's translate model coz openai was asking for API keys which we dont have.
+Translate does not ask for any API keys
+
+We also want to automatically translate all the text on the screen so we are using Google's autotranslate
+pip install googletrans==4.0.0-rc1
+
+
