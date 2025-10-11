@@ -24,5 +24,4 @@ Translate does not ask for any API keys
 
 We also want to automatically translate all the text on the screen so we are using Google's autotranslate
 pip install googletrans==4.0.0-rc1
-
-
+But this did not work coz its way more complicated
