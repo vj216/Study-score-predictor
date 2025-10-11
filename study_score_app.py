@@ -1,6 +1,13 @@
 import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+from translate import Translator
+
+#---Translation function---
+def translate_to_finnish(text):
+    translator = Translator(to_lang="fi")
+    translation = translator.translate(text)
+    return translation
 
 #---Sample data---
 
@@ -36,10 +43,19 @@ st.markdown(f"<h6 style='font-size: 26px; color: #FFC080'>Predicted Score: {pred
 st.markdown("### Study Trend")
 st.line_chart(df.set_index('Hours_Studied'))
 
+#---Translation---
+st.markdown("### Translate English to Finnish")
+user_input = st.text_input("Enter English Text")
+if st.button("Translate"):
+    if user_input:
+        translated_text = translate_to_finnish(user_input)
+        st.markdown(f"**Finnish Translation:** {translated_text}")
+    else:
+        st.warning("Please enter some text to translate")
 #---Footer---
 
 st.markdown("---")
 st.markdown("Made by Vaidehi Joshi ")
-st.write("*Powered by caffeine *")
+st.write("*Powered by caffeine*")
 
 
